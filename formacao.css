@@ -1,0 +1,51 @@
+/* formacao.css */
+
+/* Estilos Específicos da Página Formação */
+.formacao-page .content {
+    padding: 100px 0; /* Adiciona espaço no topo e na base para acomodar o cabeçalho fixo */
+    display: flex; /* Usa o modelo de layout flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: left; /* Alinha o texto à esquerda */
+    color: white; /* Define a cor do texto como branco para visibilidade sobre o fundo */
+}
+
+.formacao-page h1 {
+    font-size: 3em; /* Define o tamanho da fonte do título */
+    color: white; /* Define a cor do texto como branco */
+    text-shadow: 2px 2px 5px #ff00ff; /* Adiciona sombra rosa neon ao texto */
+    margin-bottom: 40px; /* Adiciona espaço abaixo do título */
+    text-align: center; /* Centraliza o título */
+}
+
+/* Estilo das Caixas de Cursos */
+.formacao-page .course-container {
+    display: flex; /* Usa o modelo de layout flexível */
+    flex-direction: row; /* Organiza os itens em uma linha */
+    align-items: flex-start; /* Alinha os itens ao início (esquerda) */
+    margin-bottom: 20px; /* Adiciona espaço entre os cursos */
+    width: 80%; /* Define a largura do contêiner de cursos */
+}
+
+.formacao-page .institution-box, 
+.formacao-page .course-box, 
+.formacao-page .course-description {
+    background-color: rgba(0, 0, 0, 0.7); /* Define uma cor de fundo preta translúcida */
+    color: white; /* Define a cor do texto como branco */
+    padding: 20px; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    border: 2px solid #ff00ff; /* Adiciona uma borda rosa neon */
+    margin-right: 10px; /* Adiciona espaço entre as caixas */
+}
+
+.formacao-page .institution-box {
+    min-width: 150px; /* Define a largura mínima da caixa da instituição */
+}
+
+.formacao-page .course-box {
+    min-width: 200px; /* Define a largura mínima da caixa do curso */
+}
+
+.formacao-page .course-description {
+    flex: 1; /* Permite que a caixa de descrição ocupe o restante do espaço disponível */
+}

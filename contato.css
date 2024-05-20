@@ -1,0 +1,59 @@
+/* Estilos Específicos da Página Contato */
+.contato-page .content {
+    padding: 100px 0; /* Adiciona espaço no topo e na base para acomodar o cabeçalho fixo */
+    display: flex; /* Utiliza o modelo de layout flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Define a cor do texto como branco para visibilidade sobre o fundo */
+}
+
+.contato-page h1 {
+    font-size: 4.5em; /* Define o tamanho da fonte do título */
+    color: white; /* Define a cor do texto como branco */
+    text-shadow: 3px 3px 6px #ff00ff; /* Adiciona uma sombra rosa neon ao texto */
+    margin-bottom: 50px; /* Adiciona espaço abaixo do título */
+}
+
+.contato-page form {
+    background-color: rgba(0, 0, 0, 0.7); /* Define uma cor de fundo preta translúcida */
+    padding: 20px; /* Adiciona espaçamento interno */
+    border: 2px solid #ff00ff; /* Adiciona uma borda rosa neon */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    display: flex; /* Utiliza o modelo de layout flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    width: 80%; /* Define a largura do formulário como 80% do contêiner pai */
+    max-width: 600px; /* Define a largura máxima do formulário */
+}
+
+.contato-page form label {
+    margin-top: 10px; /* Adiciona espaço acima dos rótulos */
+    color: white; /* Define a cor do texto como branco */
+}
+
+.contato-page form input, .contato-page form textarea {
+    padding: 10px; /* Adiciona espaçamento interno */
+    margin-top: 5px; /* Adiciona espaço acima dos campos de entrada */
+    border: 1px solid #ff00ff; /* Adiciona uma borda rosa neon */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    background-color: black; /* Define a cor de fundo como preto */
+    color: white; /* Define a cor do texto como branco */
+}
+
+.contato-page form .submit-button {
+    text-align: center; /* Centraliza o botão de envio */
+    margin-top: 20px; /* Adiciona espaço acima do contêiner do botão de envio */
+}
+
+.contato-page form .submit-button button {
+    background-color: #333; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão como branco */
+    padding: 10px 20px; /* Adiciona espaçamento interno ao botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Altera o cursor para um ponteiro ao passar sobre o botão */
+}
+
+.contato-page form .submit-button button:hover {
+    background-color: #555; /* Altera a cor de fundo do botão ao passar o mouse sobre ele */
+}

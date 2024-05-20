@@ -1,0 +1,34 @@
+/* Estilos Específicos da Página Portfólio */
+.portifolio-page .content {
+    padding: 100px 0; /* Adiciona espaço no topo e na base para acomodar o cabeçalho fixo */
+    display: flex; /* Utiliza o modelo de layout flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Define a cor do texto como branco para visibilidade sobre o fundo */
+}
+
+.portifolio-page h1 {
+    font-size: 4.5em; /* Define o tamanho da fonte do título */
+    color: white; /* Define a cor do texto como branco */
+    text-shadow: 3px 3px 6px #ff00ff; /* Adiciona uma sombra rosa neon ao texto */
+    margin-bottom: 40px; /* Adiciona espaço abaixo do título */
+}
+
+.portifolio-page .construction-message {
+    background-color: rgba(0, 0, 0, 0.7); /* Define uma cor de fundo preta translúcida */
+    padding: 20px; /* Adiciona espaçamento interno */
+    border: 2px solid #ff00ff; /* Adiciona uma borda rosa neon */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    display: flex; /* Utiliza o modelo de layout flexível */
+    align-items: center; /* Alinha os itens centralmente na vertical */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    width: 80%; /* Define a largura da caixa como 80% do contêiner pai */
+    max-width: 600px; /* Define a largura máxima da caixa */
+}
+
+.portifolio-page .construction-message p {
+    font-size: 1.5em; /* Define o tamanho da fonte do parágrafo */
+    color: white; /* Define a cor do texto como branco */
+    margin: 0; /* Remove a margem padrão */
+}

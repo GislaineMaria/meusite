@@ -1,0 +1,138 @@
+
+/* Estilos comuns para todas as páginas */
+
+/* Estilos Globais */
+body, html {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: url('imagens/verde.jpg') no-repeat center center fixed; /* Imagem de fundo */
+    background-size: cover; /* Imagem cobre toda a tela */
+}
+
+/* Container Centralizado */
+.container {
+    width: 80%; /* Largura de 80% da tela */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex;
+    justify-content: space-between; /* Espaça itens igualmente */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto translúcido */
+    color: white; /* Texto branco */
+    padding: 10px 0;
+    position: fixed; /* Cabeçalho fixo */
+    width: 100%; /* Largura total */
+    z-index: 1000; /* Sobrepõe outros elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    height: 70px; /* Altura do cabeçalho */
+}
+
+.brand-logo img {
+    width: 100px; /* Largura da logo */
+    border-radius: 50%; /* Borda redonda */
+    border: 5px solid rgba(255, 255, 255, 0); /* Borda transparente */
+    margin-right: 20px; /* Espaço entre a logo e o menu */
+}
+
+.menu {
+    text-align: center; /* Centraliza o texto */
+}
+
+.menu ul {
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Define o menu como flex container */
+    justify-content: center; /* Centraliza itens */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+}
+
+.menu ul li {
+    display: inline; /* Itens em linha */
+    margin: 0 10px; /* Espaço entre itens */
+}
+
+.menu ul li a {
+    color: white; /* Texto branco */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 10px 20px;
+    border: 2px solid #ff00ff; /* Borda rosa neon */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+.menu ul li a:hover {
+    background-color: #ff00ff; /* Fundo rosa neon ao passar o mouse */
+    color: black; /* Texto preto ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333; /* Fundo cinza escuro */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu ul li {
+        display: block; /* Itens em bloco em telas menores */
+        margin: 10px 0; /* Espaço entre itens */
+    }
+
+    .hero {
+        flex-direction: column; /* Coluna para hero em telas menores */
+        text-align: center; /* Centraliza texto */
+    }
+
+    .hero .hero-text, .hero .hero-image {
+        flex: none;
+        width: 100%; /* Largura total em telas menores */
+    }
+
+    .hero .hero-text {
+        padding-right: 0;
+        margin-bottom: 20px; /* Espaço abaixo do texto */
+    }
+
+    .portifolio-gallery {
+        flex-direction: column; /* Coluna para galeria em telas menores */
+    }
+
+    .contato-page form {
+        width: 90%; /* Largura de 90% em telas menores */
+    }
+
+    .portifolio-page .construction-message {
+        width: 90%; /* Largura de 90% em telas menores */
+    }
+
+    .formacao-page .content {
+        padding: 50px 0; /* Reduzido o padding em telas menores */
+    }
+
+    .formacao-page .course-container {
+        flex-direction: column; /* Coluna para contêiner de curso em telas menores */
+        align-items: center; /* Centraliza itens em telas menores */
+    }
+
+    .formacao-page .institution-box, .formacao-page .course-box, .formacao-page .course-description {
+        margin-right: 0; /* Remove margem direita */
+        margin-bottom: 10px; /* Adiciona margem inferior */
+        width: 90%; /* Largura de 90% */
+    }
+
+    .formacao-page .course-description {
+        width: 100%; /* Largura total para descrição */
+    }
+}

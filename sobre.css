@@ -1,0 +1,51 @@
+/* sobre.css */
+
+/* Estilos específicos para a página Sobre Mim */
+
+/* Seção de Conteúdo */
+.content {
+    padding: 100px 0; /* Adiciona espaço no topo e na base para acomodar o cabeçalho fixo */
+    display: flex; /* Usa o modelo de layout flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza horizontalmente os itens */
+    text-align: center; /* Alinha o texto ao centro */
+    color: white; /* Define a cor do texto como branco para visibilidade sobre o fundo */
+}
+
+.content img {
+    border-radius: 50%; /* Define bordas arredondadas para a imagem (formato circular) */
+    width: 200px; /* Define a largura da imagem */
+    height: 200px; /* Define a altura da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir completamente o elemento, mantendo a proporção */
+    margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+    border: 5px solid #ff00ff; /* Adiciona uma borda redonda rosa neon */
+}
+
+.content h1 {
+    font-size: 4em; /* Define o tamanho da fonte do título */
+    color: white; /* Define a cor do texto como branco */
+    text-shadow: 3px 3px 6px #ff00ff; /* Adiciona sombra rosa neon ao texto */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+.content p {
+    font-size: 1em; /* Define o tamanho da fonte do parágrafo */
+    background-color: rgba(0, 0, 0, 0.7); /* Define uma cor de fundo preta translúcida */
+    color: white; /* Define a cor do texto como branco */
+    padding: 20px; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    width: 80%; /* Define a largura da caixa de texto */
+    margin: 0 auto; /* Centraliza a caixa de texto */
+}
+
+.content ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+.content ul li {
+    background: #eee; /* Define a cor de fundo dos itens da lista */
+    margin-bottom: 10px; /* Adiciona espaço abaixo de cada item da lista */
+    padding: 10px; /* Adiciona espaçamento interno aos itens da lista */
+    border-radius: 5px; /* Adiciona bordas arredondadas aos itens da lista */
+}

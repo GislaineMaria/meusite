@@ -1,0 +1,67 @@
+/* index.css */
+
+/* Hero Section */
+.hero {
+    background: url('imagens/verde.jpg') no-repeat center center/cover; /* Define a imagem de fundo e a posiciona */
+    color: white; /* Define a cor do texto como branco */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport */
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: space-between; /* Distribui os itens uniformemente ao longo do eixo principal */
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 60px 10%; /* Adiciona espaçamento interno */
+    box-sizing: border-box; /* Faz com que a padding e a border não aumentem o tamanho do elemento */
+}
+
+/* Estilo para o texto dentro da seção hero */
+.hero .hero-text {
+    flex: 1; /* Ocupa todo o espaço disponível */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding-right: 20px; /* Adiciona espaçamento à direita */
+}
+
+/* Estilo para o título dentro da seção hero */
+.hero .hero-text h1 {
+    margin: 0; /* Remove as margens padrão */
+    font-size: 5.5em; /* Define o tamanho da fonte */
+    text-shadow: 3px 3px 6px #ff00ff; /* Adiciona sombra ao texto */
+}
+
+/* Estilo para o parágrafo dentro da seção hero */
+.hero .hero-text p {
+    font-size: 1.5em; /* Define o tamanho da fonte */
+    background-color: rgba(0, 0, 0, 0.7); /* Define uma cor de fundo translúcida */
+    padding: 10px; /* Adiciona espaçamento interno */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+/* Estilo para a imagem dentro da seção hero */
+.hero .hero-image {
+    flex: 1; /* Ocupa todo o espaço disponível */
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    align-items: center; /* Centraliza verticalmente os itens */
+    height: calc(100vh - 60px - 20px); /* Calcula a altura com base na altura da viewport */
+}
+
+/* Estilo para a imagem dentro da seção hero */
+.hero .hero-image img {
+    max-width: 100%; /* Define a largura máxima como 100% */
+    max-height: calc(70vh - 40px - 80px); /* Calcula a altura máxima com base na altura da viewport */
+    height: auto; /* Mantém a proporção da imagem */
+    border:  5px solid #ff00ff; /* Adiciona uma borda rosa */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    animation: float 3s ease-in-out infinite; /* Adiciona uma animação de flutuação */
+}
+
+/* Animação de flutuação */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
